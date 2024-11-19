@@ -1,0 +1,44 @@
+# Bluetooth in Ubuntu
+
+    sudo apt install git dkms
+    git clone https://github.com/jeremyb31/bluetooth-6.5.git
+    sudo dkms install btusb/4.1
+    
+    git clone https://github.com/jeremyb31/bluetooth-6.8.git
+    sudo dkms add ./bluetooth-6.8
+    
+    sudo dkms remove btusb/4.1 --all
+    dkms status
+    sudo dkms add ./bluetooth-6.8
+    sudo dkms build btusb/4.1
+    sudo dkms install btusb/4.1
+    dkms status
+    reboot
+
+
+# if it doesnot woek then try one by one
+
+
+    Install the basic packages
+    To make bluetooth work on Debian/Ubuntu systems, following packages should be installed -
+    
+    sudo apt install bluetooth pulseaudio-module-bluetooth blueman bluez-firmware bluez-tools
+    Now enable the bluetooth service -
+    
+    sudo systemctl enable bluetooth.service
+    sudo systemctl start bluetooth.service
+    
+    You can also enable the kernel bluetooth module using this command -
+    
+    modprobe btusb
+    Now, restart the system (it is optional, but recommended).
+    
+    Reset bluetooth adapter
+    Use following command to reset bluetooth adapter -
+    
+    sudo hciconfig hci0 reset
+    Scan for bluetooth devices using following command to test the fix -
+    
+    bt-adapter -d
+    
+    https://www.yashagarwal.in/notes/debug-bluetooth-on-linux
