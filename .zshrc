@@ -78,4 +78,3 @@ export PATH=/home/abhishek/.sst/bin:$PATH
 # fly.io
 export FLYCTL_INSTALL="/home/abhishek/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
-
