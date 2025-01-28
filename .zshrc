@@ -66,16 +66,16 @@ eval "$(starship init zsh)"
 JAVA_HOME="/usr/java/jre1.8.0_371"
 
 # pnpm
-export PNPM_HOME="/home/shubham/.local/share/pnpm"
+export PNPM_HOME="/home/abhishek/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
 # sst
-export PATH=/home/shubham/.sst/bin:$PATH
+export PATH=/home/abhishek/.sst/bin:$PATH
 
 # fly.io
-export FLYCTL_INSTALL="/home/shubham/.fly"
+export FLYCTL_INSTALL="/home/abhishek/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
