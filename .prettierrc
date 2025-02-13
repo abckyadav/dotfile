@@ -1,6 +1,9 @@
 
 // npm i prettier-plugin-tailwindcss
 
+// create .prettierrc file in root folder 
+// then paste below command
+
 {
     "semi": true,
     "singleQuote": false,
