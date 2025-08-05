@@ -61,3 +61,25 @@ export PATH=/home/abhishek/.sst/bin:$PATH
 # fly.io
 export FLYCTL_INSTALL="/home/abhishek/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/home/abhishek/.bun/_bun" ] && source "/home/abhishek/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+. "$HOME/.atuin/bin/env"
+
+ eval "$(atuin init zsh)"
+export NODE_OPTIONS="--max-old-space-size=16384"
+export NODE_OPTIONS="--max-old-space-size=24576"
+
+
+export PATH="/opt/sonar-scanner/bin:$PATH"
